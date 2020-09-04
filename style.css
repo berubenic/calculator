@@ -1,0 +1,103 @@
+body {
+  font-family: "Orbitron", sans-serif;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3em;
+  display: grid;
+  grid-template-rows: 20% repeat(5, 16%);
+  grid-template-columns: repeat(4, 25%);
+  grid-template-areas:
+    "display display display display"
+    "clear clear back divide"
+    "seven eight nine multiply"
+    "four five six substract"
+    "one two three add"
+    "zero zero dot equal";
+  height: 50vh;
+
+  font-family: "Orbitron", sans-serif;
+}
+.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: display;
+  font-size: 1.6em;
+  background-color: rgba(68, 187, 20, 0.822);
+  border: 1px solid black;
+  padding-right: 0.1em;
+  overflow: hidden;
+}
+.clear {
+  grid-area: clear;
+}
+.back {
+  grid-area: back;
+}
+.divide {
+  grid-area: divide;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.multiply {
+  grid-area: multiply;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.substract {
+  grid-area: substract;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.add {
+  grid-area: add;
+}
+.zero {
+  grid-area: zero;
+}
+.dot {
+  grid-area: dot;
+}
+.equal {
+  grid-area: equal;
+}
+.number {
+  background-color: white;
+  color: black;
+}
+.black {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+button {
+  font-size: 1.6em;
+}
+button.black:hover {
+  background-color: rgba(0, 0, 0, 0.808);
+}
+button.number:hover {
+  background-color: rgb(221, 219, 219);
+}
